@@ -1,0 +1,67 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  
+    <form action="#" method="post" autocomplete="off" novalidate="" class="casa-journey-form">
+
+      <div class="info govuk-!-padding-3 govuk-!-margin-bottom-5">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-0">Expected</h2>
+        <p clsas="govuk-body">Using voice over we should be able to use VO + command + J to navigate to the next form element.</p>
+
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-0">Issue</h2>
+        <p clsas="govuk-body">When a select is in focus VO + command + J does not take you to the button. This doesn't happen without a select other pages.</p>
+
+
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-0">Notes</h2>
+        <p clsas="govuk-body">Navigating out of the select allows you to skip to the next field.</p>
+
+        <p clsas="govuk-body">Using rotor (VO + U) all elements on the page are listed.</p>
+
+        <p class="govuk-body">Yes, selects are bad.</p>
+      </div>
+
+
+      <h1 class="govuk-heading-xl">
+        Where can we send you letters about your application?
+      </h1>
+    
+      <div class="govuk-form-group required govuk-!-margin-bottom-6">
+        <label class="govuk-label govuk-label--m" for="f-rpaddress">
+          Please select your address
+        </label>
+
+
+        <select class="govuk-select" id="f-rpaddress" name="rpaddress">
+        
+          <option value="">please select your address</option>
+        
+          <option value="{&quot;address1&quot;:&quot;1 Clarence House&quot;,&quot;address2&quot;:&quot;The Boulevard&quot;,&quot;address3&quot;:null,&quot;address4&quot;:null,&quot;address5&quot;:null,&quot;county&quot;:&quot;WEST YORKSHIRE&quot;,&quot;city&quot;:&quot;LEEDS&quot;,&quot;country&quot;:&quot;England&quot;,&quot;postCode&quot;:&quot;LS10 1LG&quot;,&quot;deliveryPointSuffix&quot;:&quot;1AN&quot;}">1 Clarence House</option>
+        
+          <option value="{&quot;address1&quot;:&quot;2 Clarence House&quot;,&quot;address2&quot;:&quot;The Boulevard&quot;,&quot;address3&quot;:null,&quot;address4&quot;:null,&quot;address5&quot;:null,&quot;county&quot;:&quot;WEST YORKSHIRE&quot;,&quot;city&quot;:&quot;LEEDS&quot;,&quot;country&quot;:&quot;England&quot;,&quot;postCode&quot;:&quot;LS10 1LG&quot;,&quot;deliveryPointSuffix&quot;:&quot;5ZA&quot;}" selected="">2 Clarence House</option>
+        
+        </select>
+      </div>
+
+      <p class="govuk-body"><a href="#" class="govuk-link">My address is not listed</a></p>
+
+      <footer class="casa-form-control-block govuk-body">
+            
+        <button type="submit" data-prevent-double-click="true" class="govuk-button" id="continue-button">
+          Continue
+        </button>
+
+      </footer>
+  
+    </form>
+  </div>
+</div>
+
+{% endblock %}
