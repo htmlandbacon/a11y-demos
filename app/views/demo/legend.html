@@ -1,0 +1,57 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  
+      <div class="info govuk-!-padding-3 govuk-!-margin-bottom-5">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-0">Expected</h2>
+        <p clsas="govuk-body">Using ZoomText 10.1 SpeakIt tool, in read all mode should use enter to start/stop</p>
+
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-0">Issue</h2>
+        <p clsas="govuk-body">SpeakIt stops on pages that have wrapped h1 in legends and you can't restart</p>
+
+      </div>
+
+
+ <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Where do you live?
+      </h1>
+    </legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="England (Match)">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">England (match)</label>
+        </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="Scotland (Match but spaces)">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          Scotland (Match but spaces)
+        </label> </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="this-be-wales-different">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Wales (Different)
+        </label> </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">Northern Ireland</label>
+        </div>
+    </div>
+  </fieldset>
+</div>
+
+
+  </div>
+</div>
+
+{% endblock %}
