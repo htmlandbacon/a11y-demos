@@ -1,0 +1,68 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  
+    <form action="#" method="post" autocomplete="off" novalidate="" class="casa-journey-form">
+
+      <div class="info govuk-!-padding-3 govuk-!-margin-bottom-5">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-0">H2 : The quick brown fox jumps over the lazy dog?</h2>
+        <p clsas="govuk-body">P: The quick brown fox jumps over the lazy dog? Dog?</p>
+      </div>
+
+    <h2 class="govuk-heading-s govuk-!-margin-bottom-0">H2 : The quick brown fox jumps over the lazy dog?</h2>
+    <p clsas="govuk-body">P: The quick brown fox jumps over the lazy dog? Dog?</p>
+
+      <p class="govuk-body"><a href="#" class="govuk-link">link: The quick brown fox jumps over the lazy dog?</a></p>
+
+{{ govukRadios({
+  idPrefix: "where-do-you-live",
+  name: "where-do-you-live",
+  fieldset: {
+    legend: {
+      text: "Where do you live?",
+      isPageHeading: true,
+      classes: "govuk-fieldset__legend--xl"
+    }
+  },
+  items: [
+    {
+      value: "england",
+      text: "England?"
+    },
+    {
+      value: "scotland",
+      text: "Scotland?"
+    },
+    {
+      value: "wales",
+      text: "Wales?"
+    },
+    {
+      value: "northern-ireland",
+      text: "Northern Ireland?"
+    }
+  ]
+}) }}
+
+
+      <footer class="casa-form-control-block govuk-body">
+            
+        <button type="submit" data-prevent-double-click="true" class="govuk-button" id="continue-button">
+          Continue
+        </button>
+
+      </footer>
+  
+    </form>
+  </div>
+</div>
+
+{% endblock %}
