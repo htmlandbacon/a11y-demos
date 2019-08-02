@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+`
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+<form action="#" method="post" autocomplete="off" novalidate="" class="casa-journey-form">
+  <input type="hidden" name="_csrf" value="THeXxGZ1-e-8uR-CVjAkr7cmJYLczkv2Zx4w">
+  
+  
+
+  
+  
+      
+<legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+  <h1 class="govuk-fieldset__heading">
+    What are your contact details?
+  </h1>
+</legend>
+  <p class="govuk-body">Your answers are confidential.</p>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-!-font-weight-bold" for="f-mobile-number">
+    Mobile number
+  </label>
+
+  
+  
+  <span id="f-mobile-number-hint" class="govuk-hint">
+    We will only use this to call you or send you text messages about your case.
+  </span>
+
+
+  <input class="govuk-input govuk-!-width-two-thirds" id="f-mobile-number" name="mobile-number" type="text" aria-describedby="f-mobile-number-hint">
+</div>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-!-font-weight-bold" for="f-phone-number">
+    Another phone number (if you have one)
+  </label>
+
+  
+  
+  <span id="f-phone-number-hint" class="govuk-hint">
+    We will only use this to call you about your case.
+  </span>
+
+
+  <input class="govuk-input govuk-!-width-two-thirds" id="f-phone-number" name="phone-number" type="text" aria-describedby="f-phone-number-hint">
+</div>
+
+
+
+
+    
+
+  
+    <footer class="casa-form-control-block govuk-body">
+      
+  
+    
+  
+
+<button type="submit" data-prevent-double-click="true" class="govuk-button" id="continue-button">
+  Continue
+</button>
+
+
+      
+    </footer>
+  
+</form>
+
+  </div>
+</div>
+
+{% endblock %}
