@@ -1,0 +1,448 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+        <div class="govuk-phase-banner govuk-width-container" role="note">
+            <p class="govuk-phase-banner__content">
+                <strong class="govuk-tag govuk-phase-banner__content__tag">beta</strong>
+                <span class="govuk-phase-banner__text">
+                    This is a new service – your  <a class="govuk-link" href="https://www.surveymonkey.co.uk/r/T9Q86GQ">feedback </a>
+                     will help us to improve it.
+                </span>
+            </p>
+        </div>
+
+        <div class="govuk-width-container">
+            
+
+<form action="/form/summary" method="post" id="summary-form"><input type="hidden" name="_csrf" value="7ac3cf02-e015-42ba-b842-a43d80d9089a"/>
+<h1 class="govuk-heading-xl govuk-!-margin-top-6">Check your answers</h1>
+<section>
+
+    <h2 class="govuk-heading-l">Claim Start Date</h2>
+    <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">When do you want your claim to start?</dt>
+    
+    <dd class="govuk-summary-list__value">23/09/2019</dd>
+    <dd class="govuk-summary-list__actions">
+        <a href="/form/warning/claim-start-date?edit=SINGLE"
+           aria-label="Change claim start date">Change</a>
+    </dd>
+</div>
+    </dl>
+</section>
+<section class="govuk-!-margin-top-9">
+    <h2 class="govuk-heading-l">Personal details</h2>
+    <dl   class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">National Insurance number</dt>
+            <dd class="govuk-summary-list__value">AA 12 34 56 A</dd>
+            <dd class="govuk-summary-list__actions">
+                <a href="/form/nino?edit=SINGLE" class="govuk-body" aria-label="Change National Insurance number">Change</a>
+            </dd>
+        </div>
+    </dl>
+    <dl   class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Name</dt>
+    <dd class="govuk-summary-list__value">Mrs FirstName LastName</dd>
+    <dd class="govuk-summary-list__actions">
+        <a href="/form/personal-details?edit=SINGLE"
+           class="govuk-body" aria-label="Change name">Change</a>
+    </dd>
+</div>
+    </dl>
+    <dl   class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date of birth</dt>
+    <dd class="govuk-summary-list__value">08/03/1980</dd>
+    <dd class="govuk-summary-list__actions">
+        <a href="/form/date-of-birth?edit=SINGLE"
+           class="govuk-body" aria-label="Change date of birth">Change</a>
+    </dd>
+</div>
+    </dl>
+    <dl   class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Home address</dt>
+    <dd class="govuk-summary-list__value">Street Name, Town. PO57 0DE.</dd>
+    <dd class="govuk-summary-list__actions">
+        <a href="/form/personal-details/address?edit=SINGLE"
+           class="govuk-body" aria-label="Change home address">Change</a>
+    </dd>
+</div>
+    </dl>
+    <dl   class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Do you want to add a different address for your post?</dt>
+    <dd class="govuk-summary-list__value">No</dd>
+    <dd class="govuk-summary-list__actions">
+        <a href="/form/personal-details/address-is-it-postal?edit=SINGLE"
+           aria-label="Change address for your post">Change</a>
+    </dd>
+</div>
+    </dl>
+    
+    <dl   class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Telephone number</dt>
+    <dd class="govuk-summary-list__value">00000000000</dd>
+    <dd class="govuk-summary-list__actions">
+        <a href="/form/personal-details/contact/telephone?edit=SINGLE"
+           class="govuk-body" aria-label="Change telephone number">Change</a>
+    </dd>
+</div>
+    </dl>
+
+    <dl   class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Do you have an email we can contact you on?</dt>
+    <dd class="govuk-summary-list__value">No</dd>
+    <dd class="govuk-summary-list__actions">
+        <a href="/form/personal-details/contact/email-confirmation?edit=SINGLE"
+           aria-label="Change email address">Change</a>
+    </dd>
+</div>
+    </dl>
+
+    
+</section>
+<section class="govuk-!-margin-top-9">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-l">Bank details</h2>
+        </div>
+    </div>
+    <dl   class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Bank details</dt>
+            <!--if bank is not empty -->
+            
+            <!--if bank is empty -->
+            <dd class="govuk-summary-list__value">
+                <span>Not provided</span>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+                <a href="/form/bank-account?edit=SINGLE"
+                   class="govuk-body" aria-label="Change bank details">Change</a>
+            </dd>
+        </div>
+    </dl>
+</section>
+<section class="govuk-!-margin-top-9">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-l">Other benefits</h2>
+        </div>
+    </div>
+    <dl   class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Are you waiting to hear about any other benefits?</dt>
+            <dd class="govuk-summary-list__value">No</dd>
+            <dd class="govuk-summary-list__actions">
+                <a href="/form/other-benefits/are-you-waiting-to-hear?edit=SECTION"
+                   class="govuk-body" aria-label="Change other benefits">Change</a>
+            </dd>
+        </div>
+        
+    </dl>
+</section>
+<section class="govuk-!-margin-top-9">
+    <h2 class="govuk-heading-l">Jury service</h2>
+    <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Have you been on jury service in the last 12 weeks?</dt>
+            <dd class="govuk-summary-list__value">No</dd>
+            <dd class="govuk-summary-list__actions">
+                <a href="/form/claim-start/jury-service/have-you-been?edit=SECTION" aria-label="Change jury service">Change</a>
+            </dd>
+        </div>
+    </dl>
+</section>
+<section class="govuk-!-margin-top-9">
+    <h2 class="govuk-heading-l">Current work</h2>
+
+    <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Are you in any form of work at the moment?</dt>
+    <dd class="govuk-summary-list__value">Yes</dd>
+    <dd class="govuk-summary-list__actions">
+        
+    </dd>
+</div>
+    </dl>
+
+    <section>
+        <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h3 class="govuk-heading-m">First current employer</h3>
+    </div>
+    <div class="govuk-grid-column-one-third govuk-align-right">
+        <a href="/form/current-work/details/1/is-work-paid?edit=SECTION" class="govuk-body"
+           aria-label="Change First current employer">Change</a>
+    </div>
+</div>
+
+        <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Is this paid or voluntary?</dt>
+    <dd class="govuk-summary-list__value">Paid</dd>
+    <dd class="govuk-summary-list__actions">
+        
+    </dd>
+</div>
+        </dl>
+        
+        
+
+        <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">How often are you paid?</dt>
+    <dd class="govuk-summary-list__value">Monthly</dd>
+</div><div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">What&#39;s your net pay?</dt>
+    <dd class="govuk-summary-list__value">£324</dd>
+</div>
+        </dl>
+        <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">What is the name of your current employer?</dt>
+    <dd class="govuk-summary-list__value">Employer Name</dd>
+    <dd class="govuk-summary-list__actions">
+        
+    </dd>
+</div>
+        </dl>
+        <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">What is the address of your current employer?</dt>
+    <dd class="govuk-summary-list__value">Street Name, Town. </dd>
+    <dd class="govuk-summary-list__actions">
+    </dd>
+</div>
+        </dl>
+        <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">What is the phone number for your current employer (optional)?</dt>
+    <dd class="govuk-summary-list__value"></dd>
+    <dd class="govuk-summary-list__actions">
+        
+    </dd>
+</div>
+        </dl>
+        <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">How many hours a week do you normally work on this job?</dt>
+    <dd class="govuk-summary-list__value">6</dd>
+    <dd class="govuk-summary-list__actions">
+        
+    </dd>
+</div>
+        </dl>
+        <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">In this job are you self employed or a company director?</dt>
+    <dd class="govuk-summary-list__value">No</dd>
+    <dd class="govuk-summary-list__actions">
+        
+    </dd>
+</div>
+        </dl>
+
+
+        <div class="govuk-grid-row govuk-!-margin-bottom-8">
+            <div class="govuk-grid-column-two-thirds">
+                <a href="/form/current-work/details/2/is-work-paid?edit=SECTION"
+                   class="govuk-body">Add another employer</a>
+                
+                
+            </div>
+            <div class="govuk-grid-column-one-third govuk-align-right">
+                <a href="/form/employment/warning/current/1/remove" class="govuk-body"
+                   aria-label="Remove First current employer details">Remove employer details</a>
+            </div>
+        </div>
+    </section>
+    
+</section>
+<section class="govuk-!-margin-top-9">
+    <h2 class="govuk-heading-l">Previous employment</h2>
+    <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Have you had a job that ended in the last 6 months?</dt>
+    <dd class="govuk-summary-list__value">Yes</dd>
+    <dd class="govuk-summary-list__actions">
+        
+    </dd>
+</div>
+    </dl>
+    <section>
+        <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h3 class="govuk-heading-m">First previous employer</h3>
+    </div>
+    <div class="govuk-grid-column-one-third govuk-align-right">
+        <a href="/form/previous-employment/employer-details/1/dates?edit=SECTION" class="govuk-body" aria-label="Change First previous employer">Change</a>
+    </div>
+</div>
+
+        <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">When did you work for this employer?</dt>
+
+    <dd class="govuk-summary-list__value">27/04/2019 - 27/05/2019</dd>
+</div>
+
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Why did this job end?</dt>
+    <dd class="govuk-summary-list__value">End of contract</dd>
+    <dd class="govuk-summary-list__actions">
+    </dd>
+</div>
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">What is the name of your previous employer?</dt>
+    <dd class="govuk-summary-list__value">Employer Name</dd>
+    <dd class="govuk-summary-list__actions">
+        
+    </dd>
+</div>
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">What is the address of your previous employer?</dt>
+    <dd class="govuk-summary-list__value">Street Name, Town. </dd>
+    <dd class="govuk-summary-list__actions">
+    </dd>
+</div>
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">What is the telephone number of your previous employer (optional)?</dt>
+    <dd class="govuk-summary-list__value"></dd>
+    <dd class="govuk-summary-list__actions">
+        
+    </dd>
+</div>
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Were you self-employed or a Company Director?</dt>
+    <dd class="govuk-summary-list__value">No</dd>
+    <dd class="govuk-summary-list__actions">
+        
+    </dd>
+</div>
+            <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Do you expect to receive any payments because this job has ended in the last 6 months?</dt>
+    <dd class="govuk-summary-list__value">No</dd>
+    <dd class="govuk-summary-list__actions">
+        
+    </dd>
+</div>
+        </dl>
+        <div class="govuk-grid-row govuk-!-margin-bottom-8">
+            <div class="govuk-grid-column-two-thirds">
+                <a href="/form/previous-employment/employer-details/2/dates?edit=SECTION" class="govuk-body">Add another employer</a>
+            </div>
+            <div class="govuk-grid-column-one-third govuk-align-right">
+                <a href="/form/employment/warning/previous/1/remove" class="govuk-body" aria-label="Remove First previous employer details">Remove employer details</a>
+            </div>
+        </div>
+    </section>
+    
+</section>
+<section class="govuk-!-margin-top-9">
+
+    <h2 class="govuk-heading-l">Working or claiming benefit overseas</h2>
+    <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Have you worked or claimed benefit outside the United Kingdom in last 4 years?</dt>
+    <dd class="govuk-summary-list__value">No</dd>
+    <dd class="govuk-summary-list__actions">
+        <a href="/form/outside-work/has-outside-work?edit=SINGLE" aria-label="Change working or claiming benefit overseas">Change</a>
+    </dd>
+</div>
+
+    </dl>
+</section>
+<section class="govuk-!-margin-top-9">
+    <h2 class="govuk-heading-l">Current pension</h2>
+    <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Are you getting money from a pension or annuity?</dt>
+    <dd class="govuk-summary-list__value">No</dd>
+    <dd class="govuk-summary-list__actions">
+        <a href="/form/pensions/current/has-pension?edit=SECTION" aria-label="Change current pension">Change</a>
+    </dd>
+</div>
+    </dl>
+    
+    
+</section>
+<section class="govuk-!-margin-top-9">
+    <h2 class="govuk-heading-l">Deferred pensions</h2>
+    <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Do you have a pension or annuity that you could be paid now, but have decided not to take?</dt>
+    <dd class="govuk-summary-list__value">No</dd>
+    <dd class="govuk-summary-list__actions">
+        <a href="/form/pensions/deferred/has-pension?edit=SECTION" aria-label="Change deferred pension">Change</a>
+    </dd>
+</div>
+    </dl>
+    
+    
+</section>
+<section class="govuk-!-margin-top-9">
+    <h2 class="govuk-heading-l">Future pensions</h2>
+    <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Do you expect to start receiving a pension or annuity in the next 6 months?</dt>
+    <dd class="govuk-summary-list__value">No</dd>
+    <dd class="govuk-summary-list__actions">
+        <a href="/form/pensions/future/has-pension?edit=SECTION" aria-label="Change future pension">Change</a>
+    </dd>
+</div>
+    </dl>
+    
+    
+</section>
+<section>
+    
+</section>
+<section class="govuk-!-margin-top-9">
+    <h2 class="govuk-heading-l">Education and training</h2>
+    <dl  class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Have you been in education or training in the last 4 years?</dt>
+            <dd class="govuk-summary-list__value">No</dd>
+            <dd class="govuk-summary-list__actions">
+                <a href="/form/education/have-you-been?edit=SECTION" aria-label="Change education and training">Change</a>
+            </dd>
+        </div>    
+    </dl>
+</section>
+<section class="govuk-!-margin-top-9">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-l">Availability</h2>
+        </div>
+    </div>
+    <dl   class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Are there any days and times that you won&#39;t be able to attend a job centre interview in the next 5 days?</dt>
+            <dd class="govuk-summary-list__value">No</dd>
+            <dd class="govuk-summary-list__actions">
+                <a href="/form/availability/available-for-interview?edit=SECTION" class="govuk-body" aria-label="Change availability">Change</a>
+            </dd>
+        </div>
+        
+    </dl>
+</section>
+<button role="button" type="submit"
+   class="govuk-button">Continue</button>
+</form>
+
+        </div>
+{% endblock %}
