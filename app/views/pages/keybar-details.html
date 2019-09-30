@@ -11,28 +11,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0b0c0c"/>
     <meta property="og:image"
-          content="/agent-ui/assets/images/govuk-opengraph-image.png">
+          content="//public/images/govuk-opengraph-image.png">
 
     <link rel="shortcut icon" type="image/x-icon"
-          href="/agent-ui/assets/images/favicon.ico">
-    <link rel="mask-icon" href="/agent-ui/assets/images/govuk-mask-icon.svg"
+          href="//public/images/favicon.ico">
+    <link rel="mask-icon" href="//public/images/govuk-mask-icon.svg"
           color="blue">
     <link rel="apple-touch-icon" sizes="180x180"
-          href="/agent-ui/assets/images/govuk-apple-touch-icon-180x180.png">
+          href="//public/images/govuk-apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="167x167"
-          href="/agent-ui/assets/images/govuk-apple-touch-icon-167x167.png">
+          href="//public/images/govuk-apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="152x152"
-          href="/agent-ui/assets/images/govuk-apple-touch-icon-152x152.png">
+          href="//public/images/govuk-apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon"
-          href="/agent-ui/assets/images/govuk-apple-touch-icon.png">
+          href="//public/images/govuk-apple-touch-icon.png">
 
     <!--[if !IE 8]><!-->
     <link rel="stylesheet"
-          href="/public/stylesheets/file.css">
+          href="/public/stylesheets/dwp-jsa-admin-application-0.0.7-min.css">
+    <!--<![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet"
+          href="/public/stylesheets/dwp-jsa-admin-application-ie8-0.0.7-min.css">
+    <![endif]-->
+    <link rel="stylesheet" href="/public/stylesheets/dwp-jsa-admin-print-0.0.7-min.css"
+          media="print"/>
 
-
-    <!--[if lt IE 9]>
-    <script src="/agent-ui/js/html5shiv-printshiv.min.js"></script>
+    <!--[if lt IE 9]>x
+    <script src="/public/js/html5shiv-printshiv.min.js"></script>
     <![endif]-->
     <!-- Google Analytics -->
     <script>
@@ -70,7 +76,7 @@
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
 
-                    <a href="/agent-ui/contact-centre" class="dwp-header__link dwp-header__link--service-name">Applying for new style Jobseeker’s Allowance</a>
+                    <a href="/public/contact-centre" class="dwp-header__link dwp-header__link--service-name">Applying for new style Jobseeker’s Allowance</a>
 
                 </div>
 
@@ -84,23 +90,23 @@
 
     </div>
 </header>
-    <section class="key-details-bar dwp-print-hide" role="contentinfo"
+    <section class="dwp-key-details-bar dwp-print-hide" role="contentinfo"
                  aria-label="Key details" id="nino-search-result">
-            <dl class="key-details-bar__contents govuk-width-container">
-                <div class="key-details-bar__header">
+            <dl class="dwp-key-details-bar__contents govuk-width-container">
+                <div class="dwp-key-details-bar__header">
                     <dt class="govuk-visually-hidden">Name:</dt>
-                    <dd class="key-details-bar__name">Mrs FirstName LastName</dd>
+                    <dd class="dwp-key-details-bar__name">Mrs FirstName LastName</dd>
 
                     <dt class="govuk-visually-hidden">National Insurance number:</dt>
-                    <dd class="key-details-bar__nino">CC 00 00 02 A</dd>
+                    <dd class="dwp-key-details-bar__nino">CC 00 00 02 A</dd>
 
                     <dt class="govuk-visually-hidden">Status:</dt>
-                    <dd class="key-details-bar__status">Preview</dd>
+                    <dd class="dwp-key-details-bar__status">Preview</dd>
                     
                     
                 </div>
 
-                <div class="key-details-bar__body">
+                <div class="dwp-key-details-bar__body">
 
 
                     <dt>DOB:</dt>
@@ -155,16 +161,16 @@
 
         <dl role="list" class="app-check-your-answers app-check-your-answers--long">
 
-            <div role="presentation" class="app-check-your-answers__contents">
-    <dt role="term" class="app-check-your-answers__question">Contact Number</dt>
+            <div  class="app-check-your-answers__contents">
+    <dt  class="app-check-your-answers__question">Contact Number</dt>
     <dd role="definition" class="app-check-your-answers__answer">00000000000</dd>
-    <dd role="presentation" class="app-check-your-answers__change">
+    <dd  class="app-check-your-answers__change">
     </dd>
 </div>
 
 
-            <div role="presentation" class="app-check-your-answers__contents">
-    <dt role="term" class="app-check-your-answers__question">Home Address</dt>
+            <div  class="app-check-your-answers__contents">
+    <dt  class="app-check-your-answers__question">Home Address</dt>
     <dd role="definition" class="app-check-your-answers__answer">
         <span class="dwp-print-block">Address Line One</span>
         <span class="dwp-print-block"></span>
@@ -172,14 +178,14 @@
         <span class="dwp-print-block">PO57 0DE</span>
         <span class="dwp-print-block">ENGLAND.</span>
     </dd>
-    <dd role="presentation" class="app-check-your-answers__change">
+    <dd  class="app-check-your-answers__change">
     </dd>
 </div>
 
 
             
-                <div role="presentation" class="app-check-your-answers__contents">
-    <dt role="term" class="app-check-your-answers__question">Postal Address</dt>
+                <div  class="app-check-your-answers__contents">
+    <dt  class="app-check-your-answers__question">Postal Address</dt>
     <dd role="definition" class="app-check-your-answers__answer">
         <span class="dwp-print-block">Address Line One</span>
         <span class="dwp-print-block">Address Line Two</span>
@@ -187,14 +193,14 @@
         <span class="dwp-print-block">PO57 0DE</span>
         <span class="dwp-print-block">ENGLAND.</span>
     </dd>
-    <dd role="presentation" class="app-check-your-answers__change">
+    <dd  class="app-check-your-answers__change">
     </dd>
 </div>
             
 
             
-    <div role="presentation" class="app-check-your-answers__contents">
-        <dt role="term" class="app-check-your-answers__question">Not available on these days</dt>
+    <div  class="app-check-your-answers__contents">
+        <dt  class="app-check-your-answers__question">Not available on these days</dt>
         <dd role="definition" class="app-check-your-answers__answer">
             
             
@@ -218,25 +224,25 @@
         <dl role="list" class="app-check-your-answers app-check-your-answers--long">
 
             
-                <div role="presentation" class="app-check-your-answers__contents">
-    <dt role="term" class="app-check-your-answers__question">Telephone</dt>
+                <div  class="app-check-your-answers__contents">
+    <dt  class="app-check-your-answers__question">Telephone</dt>
     <dd role="definition" class="app-check-your-answers__answer">
         <span>0800 169 0190</span>
         <br>
         <span>Welsh language 0345 604 4248</span>
     </dd>
-    <dd role="presentation" class="app-check-your-answers__change">
+    <dd  class="app-check-your-answers__change">
     </dd>
 </div>
 
-                <div role="presentation" class="app-check-your-answers__contents">
-                    <dt role="term" class="app-check-your-answers__question">Name</dt>
+                <div  class="app-check-your-answers__contents">
+                    <dt  class="app-check-your-answers__question">Name</dt>
                     <dd role="definition" class="app-check-your-answers__answer">Portsmouth Jobcentre</dd>
 
                 </div>
 
-                <div role="presentation" class="app-check-your-answers__contents">
-    <dt role="term" class="app-check-your-answers__question">Address</dt>
+                <div  class="app-check-your-answers__contents">
+    <dt  class="app-check-your-answers__question">Address</dt>
     <dd role="definition" class="app-check-your-answers__answer">
         <span class="dwp-print-block">Old Canal House, 27 Arundel Street</span>
         <span class="dwp-print-block">Portsmouth</span>
@@ -244,7 +250,7 @@
         <span class="dwp-print-block">PO1 1NB</span>
         
     </dd>
-    <dd role="presentation" class="app-check-your-answers__change">
+    <dd  class="app-check-your-answers__change">
     </dd>
 </div>
 
@@ -268,7 +274,7 @@
             <ul class="govuk-list govuk-!-font-size-16">
                 
                 <li><a
-                        href="/agent-ui/claim/update?claimantId=66cd3bc9-3b40-44c5-bfc2-3ed25f10e6f4">Update claim information</a></li>
+                        href="/public/claim/update?claimantId=66cd3bc9-3b40-44c5-bfc2-3ed25f10e6f4">Update claim information</a></li>
                 
                 
             </ul>
@@ -278,7 +284,7 @@
                     <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
                     <section>
     <h3 class="govuk-heading-m" id="subsection-title">Claim status history</h3>
-    <a href="/agent-ui/claim/update-status?claimantId=66cd3bc9-3b40-44c5-bfc2-3ed25f10e6f4" role="button" draggable="false"
+    <a href="/public/claim/update-status?claimantId=66cd3bc9-3b40-44c5-bfc2-3ed25f10e6f4" role="button" draggable="false"
        class="govuk-button govuk-!-margin-bottom-0">Update claim status</a>
 
     <ol class="dwp-timeline">
@@ -345,7 +351,7 @@
                     <ul class="govuk-footer__inline-list">
                         
                     </ul>
-                    <svg role="presentation" focusable="false" class="govuk-footer__licence-logo"
+                    <svg  focusable="false" class="govuk-footer__licence-logo"
                          xmlns="http://www.w3.org/2000/svg" viewbox="0 0 483.2 195.7" height="17" width="41">
                         <path
                                 fill="currentColor"
@@ -369,6 +375,6 @@
         </div>
     </footer>
 
-    <script src="/agent-ui/js/dwp-jsa-admin-application-0.0.7-min.js"></script>
+    <script src="/public/js/dwp-jsa-admin-application-0.0.7-min.js"></script>
 </body>
 </html>
