@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="info govuk-!-padding-3 govuk-!-margin-bottom-8">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-0">Reported Issues</h2>
+        <p clsas="govuk-body">Zoom text can't read checkboxes</p>
+    </div>
+
+
+<form action="#" method="post" autocomplete="off" id="form1" novalidate="" class="casa-journey-form">
+  <input type="hidden" name="_csrf" value="THeXxGZ1-e-8uR-CVjAkr7cmJYLczkv2Zx4w">
+  
+ {{ 
+
+govukCheckboxes({
+  name: "otherparentinfo",
+  casaValue: formData.otherparentinfo if formData.otherparentinfo  else journeyData["other-parent-other-information"].otherparentinfo ,
+  fieldset: {
+    legend: {
+      text: 'Other Parent',
+      isPageHeading: true,
+      classes: "govuk-fieldset__legend--xl"
+    }
+  },  
+  hint: {
+    text: 'Tell us everything you know'
+  },
+  items: [
+    {
+      value: "live",
+      text: 'Where they live'
+    },
+    {
+      value: "work",
+      text: 'Where they work'
+    },
+    {
+      value: "post",
+      text: 'Where they get letters'
+    },
+    {
+      value: "contact",
+      text: 'Where we can contact them'
+    }    
+  ],
+  casaErrors: formErrors
+}) }}
+
+
+    <footer class="casa-form-control-block govuk-body">
+      
+  
+    
+  
+
+<button type="submit" class="govuk-button" id="continue-button">
+  Continue
+</button>
+
+
+      
+    </footer>
+  
+</form>
+
+  </div>
+</div>
+
+
+{% endblock %}

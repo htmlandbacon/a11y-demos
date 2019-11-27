@@ -8,30 +8,16 @@
 `
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-<form action="#" method="post" autocomplete="off" novalidate="" class="casa-journey-form">
+<form action="#" method="post" autocomplete="off" id="form1" novalidate="" class="casa-journey-form">
   <input type="hidden" name="_csrf" value="THeXxGZ1-e-8uR-CVjAkr7cmJYLczkv2Zx4w">
   
   
-
-  
-  
-      
 <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
   <h1 class="govuk-fieldset__heading">
     What are your contact details?
   </h1>
 </legend>
   <p class="govuk-body">Your answers are confidential.</p>
-
-  
-
-
-
-
-
-
-
-
 
 
 
@@ -40,27 +26,12 @@
     Mobile number
   </label>
 
-  
-  
   <span id="f-mobile-number-hint" class="govuk-hint">
     We will only use this to call you or send you text messages about your case.
   </span>
 
-  <input class="govuk-input govuk-!-width-two-thirds" id="f-mobile-number" name="mobile-number" type="text" aria-describedby="f-mobile-number-hint">
+  <input class="govuk-input govuk-!-width-two-thirds" id="f-mobile-number" name="mobile-number" type="text" aria-describedby="f-mobile-number-hint" data-required=true data-required-message="My custom message">
 </div>
-
-
-
-  
-
-
-
-
-
-
-
-
-
 
 
 <div class="govuk-form-group">
@@ -90,7 +61,7 @@
     
   
 
-<button type="submit" data-prevent-double-click="true" class="govuk-button" id="continue-button">
+<button type="submit" class="govuk-button" id="continue-button">
   Continue
 </button>
 
@@ -102,5 +73,22 @@
 
   </div>
 </div>
+<script>
+document.getElementById('continue-button').onclick = function (e) {
+    event.preventDefault();
+    // get all the things
+
+    var inputs = document.querySelectorAll("input[data-required=true]");
+    if (inputs.length) {
+        inputs.forEach( function (input) {
+            if (input.value === "") {
+                alert(input.getAttribute('data-required-message'));
+                var span = document.createElement("span");
+                input.prepend(span)
+            }
+        });
+    }
+}
+</script>
 
 {% endblock %}

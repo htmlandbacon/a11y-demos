@@ -1,0 +1,52 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  
+    <form action="#" method="post" autocomplete="off" novalidate="" class="casa-journey-form">
+
+      <div class="info govuk-!-padding-3 govuk-!-margin-bottom-5">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-0">Reported Issue</h2>
+        <p clsas="govuk-body">Navigate to any manual address page and select any country from the dropdown list. ZoomText reader is able to read out all the details in the manual address page but not the Country.</p>
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-0">Notes</h2>
+        <p class="govuk-body">Selects are bad.</p>
+      </div>
+
+
+      <h1 class="govuk-heading-xl">
+        Tell us what country you live in?
+      </h1>
+    
+      <div class="govuk-form-group required govuk-!-margin-bottom-6">
+        <label class="govuk-label govuk-label--m" for="f-rpaddress">
+          Country
+        </label>
+
+
+        <select class="govuk-select" id="f-rpaddress" name="rpaddress">
+            <option value="">Select your country</option>
+            <option value="England">England</option>
+            <option value="Scotland">Scotland</option>
+            <option value="Wales">Wales</option>
+        </select>
+      </div>
+      <footer class="casa-form-control-block govuk-body">
+            
+        <button type="submit" data-prevent-double-click="true" class="govuk-button" id="continue-button">
+          Continue
+        </button>
+
+      </footer>
+  
+    </form>
+  </div>
+</div>
+
+{% endblock %}
