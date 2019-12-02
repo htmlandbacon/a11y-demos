@@ -33,7 +33,7 @@
           namePrefix: "passport-issued",
           fieldset: {
             legend: {
-              text: "When was your passport issued?",
+              text: "Basic number example",
               classes: "govuk-fieldset__legend--l"
             }
           },
@@ -58,12 +58,13 @@
             }
           },
           hint: {
-            text: "For example, 12 11 2007"
+            text: "Text example with max length"
           },
           items: [
             {
               name: "day",
               classes: "govuk-input--width-2",
+              pattern: "[0-9]*",
               attributes: {
                 maxlength: "2"
               }
@@ -71,6 +72,7 @@
             {
               name: "month",
               classes: "govuk-input--width-2",
+              pattern: "[0-9]*",
               attributes: {
                 maxlength: "2"
               }
@@ -78,6 +80,7 @@
             {
               name: "year",
               classes: "govuk-input--width-4",
+              pattern: "[0-9]*",
               attributes: {
                 maxlength: "4"
               }
@@ -86,7 +89,41 @@
         }
       ) 
     }}
+
+    <hr  class="govuk-!-margin-bottom-5" />
     
+ {{ 
+      govukDateInputNew(
+        {
+          id: "passport-issued-redone",
+          namePrefix: "passport-issued-redone",
+          fieldset: {
+            legend: {
+              text: "When was your passport issued? Part 3",
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          hint: {
+            text: "Text example with no addtional attributes"
+          },
+          items: [
+            {
+              name: "day",
+              classes: "govuk-input--width-2"
+            },
+            {
+              name: "month",
+              classes: "govuk-input--width-2"
+            },
+            {
+              name: "year",
+              classes: "govuk-input--width-4"
+            }
+          ]
+        }
+      ) 
+    }}
+
     </div>
   </div>
       
