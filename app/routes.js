@@ -22,4 +22,13 @@ router.post('/phone/collect', (req, res) => {
     res.render('phone/collect.html');
 })
 
+
+router.get('/form/demo', (req, res) => {
+    res.render('form/demo.njk');
+})
+
+router.post('/form/demo', (req, res) => {
+    res.render('form/demo.njk', {data: 'posted'});
+})
+
 module.exports = router
